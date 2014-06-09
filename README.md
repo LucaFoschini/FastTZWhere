@@ -27,12 +27,16 @@ Installation
 
  * Install [libspatialindex](https://github.com/libspatialindex/libspatialindex)). On a mac:
 
+
+
    	   wget http://download.osgeo.org/libspatialindex/spatialindex-src-1.8.1.tar.gz
 	   tar -xzvf spatialindex-src-1.8.1.tar.gz 
 	   cd spatialindex-src-1.8.1
 	   ./configure; make; make install
 
  * Install the rest of the requirements:
+
+
 
    	   pip install -r requirements.txt
 
@@ -44,6 +48,7 @@ Run
  * The first time you'll see
 
 
+
        Downloading the TZ shapefile (Olson database)...
        Done.
        Building the spatial index on the shapefile...
@@ -52,6 +57,8 @@ Run
        UTC+0100
 
  * All the other times:
+
+
 
        Loading Rtree and Pickle File
        UTC+0200

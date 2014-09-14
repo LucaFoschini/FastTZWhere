@@ -116,7 +116,7 @@ class FastTZWhere():
             print "Location Not Found"
             return None
 
-    def formattedTimeAt(self, latitude, longitude, utc_dt = datetime(*datetime.now().timetuple()[0:7], tzinfo=pytz.utc)):
+    def formattedTimeAt(self, latitude, longitude, utc_dt=datetime.now(pytz.utc)):
         """Convert the output of timeAt into a ISO 8601 time representation string"""
 
         t = self.timeAt(latitude,longitude, utc_dt)
@@ -124,7 +124,7 @@ class FastTZWhere():
             return t.strftime('%Y-%m-%d %H:%M:%S %Z%z')
         return ''
     
-    def tzAt(self, latitude, longitude, utc_dt = datetime(*datetime.now().timetuple()[0:7], tzinfo=pytz.utc)):
+    def tzAt(self, latitude, longitude, utc_dt=datetime.now(pytz.utc)):
         """Convert the output of timeAt retaining the timezone information only"""
 
         t = self.timeAt(latitude,longitude, utc_dt)
